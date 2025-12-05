@@ -1,5 +1,5 @@
 channel_sources:
-- conda-forge
+- conda-forge/label/rc,conda-forge
 channel_targets:
 - conda-forge rc
 docker_image:
