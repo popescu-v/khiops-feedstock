@@ -1,0 +1,3 @@
+---
+channel_targets:
+  - conda-forge rc # publish on label rc (pre-release / release candidate)
