@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/khiops-{{ version.replace("rc.2", "rc2") }}.tar.gz
-  sha256: a4fd0d9e6a63b3678b902572df5ea7571e4eea3e980b86646cac6f8d9fa8060e
+  url: https://test-files.pythonhosted.org/packages/a6/a8/275aca17757c3fda86766cd83e7372f4e53f70965c7d1abff38a11480ca4/khiops-{{ version.replace("rc.2", "rc2") }}.tar.gz
+  sha256: ec50a92e0106225ffbc387f3f1c2fee27baac82f748fcebc69e1edb86f43d335
 
 build:
   entry_points:
