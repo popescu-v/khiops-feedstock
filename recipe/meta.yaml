@@ -29,10 +29,14 @@ requirements:
     - pandas >=2.3.3,<4.0.0
     - scikit-learn >=1.7.2,<1.9.0
   run_constrained:
-    # do not necessary use the latest version
-    # to avoid undesired breaking changes
+    # Do not necessarily use the latest versions to avoid undesired breaking
+    # changes
+    # Use the same constraints as in the upstreaam pyproject.toml
     - boto3 >=1.17.39,<=1.35.69
     - google-cloud-storage >=1.37.0
+    - azure-core >=1.39.0,<2.0.0
+    - azure-storage-blob >=12.28.0,<13.0.0
+    - azure-storage-file-share >=12.24.0,<13.0.0
 
 test:
   imports:
