@@ -1,13 +1,13 @@
 {% set name = "khiops" %}
-{% set version = "11.0.1.0rc.3" %}
+{% set version = "11.0.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://test-files.pythonhosted.org/packages/99/5c/2c59b5a15a002893328349c7db2090db2fc17f8955428c5a37d15d0463f8/{{ name }}-{{ version.replace("rc.3", "rc3") }}.tar.gz
-  sha256: be53b7a01953a156839d5f2dab39134bb23e39c1166826263fffcaab0090ce0d
+  url: https://files.pythonhosted.org/packages/2f/8b/2326a8d6c608e41041d9b9ef2759b50c580d60351b03a5d8d788e53f41be/{{ name }}-{{ version }}.tar.gz
+  sha256: c7d07a23f388fd09d0ebcc76d19ff6bdbd5260f28c09ca5193e3fe0aa609430b
 
 build:
   entry_points:
@@ -25,7 +25,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - khiops-core =11.0.1rc.2
+    - khiops-core =11.0.1
     - pandas >=2.3.3,<4.0.0
     - scikit-learn >=1.7.2,<1.9.0
   run_constrained:
